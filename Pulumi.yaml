@@ -1,0 +1,23 @@
+name: pulumi-test-api-gateway-lambda-connect
+runtime: python
+description: Deploy test of building API Gateway + Lambda functions from Pulumi in Python
+template:
+  config:
+    tagNamespace:
+      description: e.g. Organization name
+      default:
+    tagProjectName:
+      description: Project name
+      default:
+    tagEnvironment:
+      description: e.g. prd, stg, dev
+      default: dev
+    connectInstanceId:
+      description: Instance ID of Amazon Connect instance ID
+      default:
+    connectContactFlowId:
+      description: ID of Amazon Connect contact flow ID
+      default:
+    connectSourcePhoneNumber:
+      descripion: Phone number for Connect contact center
+      default:
